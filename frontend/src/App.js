@@ -29,7 +29,7 @@ function App() {
       <h1>Book Reviews</h1>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <form onSubmit={handleSubmit}>
-        <input value={form.bookTitle} placeholder="Book Title" onChange={e => setForm({ ...form, bookTitle: e.target.value })} required />
+        <input value={form.booklitle} placeholder="Book Title" onChange={e => setForm({ ...form, bookTitle: e.target.value })} required />
         <textarea value={form.content} placeholder="Review content" onChange={e => setForm({ ...form, content: e.target.value })} required />
         <input type="number" min="0" max="5" value={form.rating} onChange={e => setForm({ ...form, rating: +e.target.value })} required />
         <button type="submit">Submit</button>
