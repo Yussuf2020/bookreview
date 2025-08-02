@@ -20,7 +20,7 @@ function App() {
       setReviews([res.data, ...reviews]);
       setForm({ bookTitle: '', content: '', rating: 0 });
     } catch {
-      setError('Submission failed');
+      setError('Submissions failed');
     }
   };
 
